@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{15DDBF3F-626C-3E8A-3011-C069D9770453}</ProjectGuid>
+    <ProjectGuid>{08AE71C0-3410-1F9E-A560-0E79FF7549D4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -74,37 +74,37 @@
     <None Include="Assets\ConeCollider\readme_jp.txt" />
     <None Include="Assets\ConeCollider\readme_en.txt" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Hub/Editor/2019.2.9f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
