@@ -5,7 +5,8 @@ using UnityEngine;
 public class Boss : MonoBehaviour
 {
 
-    public Animator animator;
+    [SerializeField]
+    private Animator bossAnimator;
     
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class Boss : MonoBehaviour
             Player p = collision.GetComponent<Player>();
             if(p != null)
             {
-                animator.SetBool("isClose", true);
+                bossAnimator.SetBool("isClose", true);
             }
         }
     }
@@ -40,7 +41,7 @@ public class Boss : MonoBehaviour
             Player p = collision.GetComponent<Player>();
             if (p != null)
             {
-                animator.SetBool("isClose", false);
+                bossAnimator.SetBool("isClose", false);
             }
         }
     }
