@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bossBehaviour : MonoBehaviour
+public class Boss : MonoBehaviour
 {
     private float _velocityAnimation = 1.0f;
     private float _canIdle;
@@ -35,7 +35,9 @@ public class bossBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision != null)
+        if (collision.name == "Player")
+            
+            
         {
             CloseAttack();
         }
