@@ -30,18 +30,17 @@ public class Boss : MonoBehaviour
 
     void CloseAttack()
     {
-        Debug.Log("Teste");
+        Destroy(this.gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.name == "Player")
-            
-            
-        {
-            CloseAttack();
-        }
+        Debug.Log("GameObject2 collided with " + col.name);
     }
+
+    
+
+    
 
 
 }

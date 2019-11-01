@@ -70,8 +70,8 @@
     <Compile Include="Assets\ConeCollider\Samples\Sample_3\PlayerMove.cs" />
     <Compile Include="Assets\ConeCollider\Script\ColliderTest.cs" />
     <Compile Include="Assets\ConeCollider\Script\ConeCollider.cs" />
-    <Compile Include="Assets\Scripts\bossBehaviour.cs" />
-    <Compile Include="Assets\Scripts\playerBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Boss.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <None Include="Assets\ConeCollider\readme_jp.txt" />
     <None Include="Assets\ConeCollider\readme_en.txt" />
     <Reference Include="Unity.Timeline.Editor">
