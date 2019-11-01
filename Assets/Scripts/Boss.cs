@@ -22,25 +22,24 @@ public class Boss : MonoBehaviour
     {
         if (Time.time > _canIdle)
         {
-            transform.position = new Vector3(Random.Range(-1.0f, 1.0f), 2.5f, -10.0f);
+            transform.position = new Vector3(Random.Range(-1.0f, 1.0f), 2.5f, 1.0f);
             _canIdle = Time.time + _velocityAnimation;
         }
         
     }
 
-    void CloseAttack()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        Destroy(this.gameObject);
+        if(collision.tag == "Player")
+        {
+            Destroy(this.gameObject);
+        }
     }
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        Debug.Log("GameObject2 collided with " + col.name);
-    }
 
-    
 
-    
+
 
 
 }
