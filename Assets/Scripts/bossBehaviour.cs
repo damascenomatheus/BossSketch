@@ -16,7 +16,6 @@ public class bossBehaviour : MonoBehaviour
     void Update()
     {
         Idle();
-        CloseAttack();
     }
 
     void Idle()
