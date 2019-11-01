@@ -10,7 +10,7 @@ public class Boss : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-           
+        
     }
 
     // Update is called once per frame
@@ -28,7 +28,19 @@ public class Boss : MonoBehaviour
             Player p = collision.GetComponent<Player>();
             if(p != null)
             {
-                Destroy(this.gameObject);
+                animator.SetBool("isClose", true);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            Player p = collision.GetComponent<Player>();
+            if (p != null)
+            {
+                animator.SetBool("isClose", false);
             }
         }
     }
