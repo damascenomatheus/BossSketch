@@ -4,36 +4,32 @@ using UnityEngine;
 
 public class Boss : MonoBehaviour
 {
-    private float _velocityAnimation = 1.0f;
-    private float _canIdle;
+
+    public Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+           
     }
 
     // Update is called once per frame
     void Update()
     {
-        Idle();
-    }
-
-    void Idle()
-    {
-        if (Time.time > _canIdle)
-        {
-            transform.position = new Vector3(Random.Range(-1.0f, 1.0f), 2.5f, 1.0f);
-            _canIdle = Time.time + _velocityAnimation;
-        }
         
     }
+
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
-            Destroy(this.gameObject);
+            Player p = collision.GetComponent<Player>();
+            if(p != null)
+            {
+                Destroy(this.gameObject);
+            }
         }
     }
 
