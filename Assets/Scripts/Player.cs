@@ -10,26 +10,27 @@ public class Player : MonoBehaviour
     [SerializeField]
     private Animator _playerAnimator;
 
+    [SerializeField]
+    private Rigidbody2D _playerRigibody;
+
     private Vector2 movement;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
+    {
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+    }
+
+    private void FixedUpdate()
     {
         Movement();
     }
 
     void Movement()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
-
-        transform.Translate(Vector3.right * Time.deltaTime * movement.x * _speed);
-        transform.Translate(Vector3.up * Time.deltaTime * movement.y * _speed);
+        _playerRigibody.MovePosition(_playerRigibody.position + movement * _speed * Time.fixedDeltaTime);
 
         _playerAnimator.SetFloat("Horizontal", movement.x);
         _playerAnimator.SetFloat("Vertical", movement.y);
