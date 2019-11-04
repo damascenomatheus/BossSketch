@@ -1,5 +1,86 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2619718968494410846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7001518405367938037}
+  - component: {fileID: 2059038170549688126}
+  - component: {fileID: 4812727881539965344}
+  - component: {fileID: 4812727881539965345}
+  m_Layer: 0
+  m_Name: FOV
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7001518405367938037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619718968494410846}
+  m_LocalRotation: {x: 0.01710063, y: -0.0010231828, z: 0.059717454, w: 0.99806833}
+  m_LocalPosition: {x: 0.35636407, y: -1.5975822, z: -0.70651466}
+  m_LocalScale: {x: 0.4815388, y: 0.61133754, z: 0.9995455}
+  m_Children: []
+  m_Father: {fileID: 4812727879875443181}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &2059038170549688126
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619718968494410846}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
+--- !u!114 &4812727881539965344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619718968494410846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a45a4dbad37dc4679b928011ea194ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bossAnimator: {fileID: 4812727881539965345}
+--- !u!95 &4812727881539965345
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619718968494410846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e9a731b19a1f43c695ae433ba1f507e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4812727879875443185
 GameObject:
   m_ObjectHideFlags: 0
@@ -10,11 +91,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4812727879875443181}
   - component: {fileID: 4812727879875443180}
-  - component: {fileID: 4812727879875443183}
   - component: {fileID: 8442927453705326943}
   - component: {fileID: 1666639984}
   - component: {fileID: 1666639985}
-  - component: {fileID: 1345077954802296417}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -32,7 +111,8 @@ Transform:
   m_LocalRotation: {x: -0.016786065, y: -0.003412753, z: 0.19933785, w: 0.97978115}
   m_LocalPosition: {x: -1.9885087, y: -0.37708664, z: -13.655968}
   m_LocalScale: {x: 2.0849, y: 1.6319, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7001518405367938037}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -1.807, y: -0.767, z: 23.012001}
@@ -85,22 +165,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &4812727879875443183
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4812727879875443185}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.12138381, y: -0.79564404}
-  serializedVersion: 2
-  m_Radius: 0.6520231
 --- !u!114 &8442927453705326943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf95041f70b904ef4be9face630f99aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossAnimator: {fileID: 1666639984}
+  _bossAnimator: {fileID: 1666639984}
 --- !u!95 &1666639984
 Animator:
   serializedVersion: 3
@@ -206,24 +270,3 @@ PolygonCollider2D:
       - {x: 0.285, y: -0.53999996}
       - {x: 0.375, y: -0.38}
       - {x: 0.375, y: -0.28}
---- !u!114 &1345077954802296417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4812727879875443185}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a45a4dbad37dc4679b928011ea194ff7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _viewRadius: 0
-  _viewAngle: 0
-  _obstacleMask:
-    serializedVersion: 2
-    m_Bits: 0
-  _playerMask:
-    serializedVersion: 2
-    m_Bits: 0
-  visiblePlayer: []

@@ -6,7 +6,7 @@ public class Boss : MonoBehaviour
 { 
 
     [SerializeField]
-    private Animator bossAnimator;
+    private Animator _bossAnimator;
     
     // Start is called before the first frame update
     void Start()
@@ -18,32 +18,6 @@ public class Boss : MonoBehaviour
     void Update()
     {
         
-    }
-
-
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag == "Player")
-        {
-            Player p = collision.GetComponent<Player>();
-            if(p != null)
-            {
-                bossAnimator.SetBool("isClose", true);
-            }
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            Player p = collision.GetComponent<Player>();
-            if (p != null)
-            {
-                bossAnimator.SetBool("isClose", false);
-            }
-        }
     }
 
 
