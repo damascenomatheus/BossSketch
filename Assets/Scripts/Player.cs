@@ -42,6 +42,7 @@ public class Player : MonoBehaviour
     {
         _playerAnimator.SetTrigger("Attack");
         spearCollider.enabled = true;
+        setCollider();
 
     }
 
@@ -70,7 +71,7 @@ public class Player : MonoBehaviour
         }
 
 
-        _playerRigibody.MovePosition(_playerRigibody.position + movement * _speed * Time.fixedDeltaTime);
+        _playerRigibody.MovePosition(_playerRigibody.position + movement.normalized * _speed * Time.fixedDeltaTime);
 
 
         _playerAnimator.SetFloat("Horizontal", movement.x);

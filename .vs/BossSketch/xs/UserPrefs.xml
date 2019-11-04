@@ -1,10 +1,9 @@
 ﻿<Properties StartupConfiguration="{08AE71C0-3410-1F9E-A560-0E79FF7549D4}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Spear.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Boss.cs">
     <Files>
-      <File FileName="Assets/Scripts/Boss.cs" Line="10" Column="5" />
-      <File FileName="Assets/Scripts/Player.cs" Line="44" Column="38" />
-      <File FileName="Assets/Scripts/FOV.cs" Line="13" Column="1" />
-      <File FileName="Assets/Scripts/Spear.cs" Line="10" Column="21" />
+      <File FileName="Assets/Scripts/Boss.cs" Line="14" Column="26" />
+      <File FileName="Assets/Scripts/Player.cs" Line="73" Column="84" />
+      <File FileName="Assets/Scripts/Spear.cs" Line="21" Column="39" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +11,7 @@
           <Node name="BossSketch" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Spear.cs" selected="True" />
+                <Node name="Boss.cs" selected="True" />
               </Node>
             </Node>
           </Node>

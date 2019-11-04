@@ -11,8 +11,14 @@ public class Boss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
-            Destroy(collision.gameObject);
+        if (collision.CompareTag("Player"))
+        {
+            Player p = collision.GetComponent<Player>();
+            if (p != null)
+            {
+                Destroy(collision.gameObject);
+            }
+        }
     }
 
 
