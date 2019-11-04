@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Player : MonoBehaviour
 {
     [SerializeField]
@@ -14,6 +15,9 @@ public class Player : MonoBehaviour
     private Rigidbody2D _playerRigibody;
 
     private Vector2 movement;
+
+    public Collider2D spearCollider;
+    
    
 
     // Update is called once per frame
@@ -21,12 +25,35 @@ public class Player : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        if(Input.GetMouseButtonDown(0))
+        {
+            SingleAttack();
+        }
     }
 
     
     private void FixedUpdate()
     {
         Movement();
+    }
+
+    void SingleAttack()
+    {
+        _playerAnimator.SetTrigger("Attack");
+        spearCollider.enabled = true;
+
+    }
+
+    IEnumerator setCollider()
+    {
+        yield return new WaitForSeconds(0.2f);
+        spearCollider.enabled = false;
+    }
+
+    void SpecialAttack()
+    {
+
     }
 
     void Movement()

@@ -314,7 +314,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993733661}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -561,6 +561,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5181764038435173984, guid: 7d4adac255d8f414f8a12fe59f5ec48f,
+        type: 3}
+      propertyPath: spearCollider
+      value: 
+      objectReference: {fileID: 993733664}
     - target: {fileID: 993733662, guid: 7d4adac255d8f414f8a12fe59f5ec48f, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
@@ -584,10 +589,11 @@ PrefabInstance:
     - target: {fileID: 993733663, guid: 7d4adac255d8f414f8a12fe59f5ec48f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 816c3246a317e4b59a56cf007b276b75,
+        type: 3}
     - target: {fileID: 993733663, guid: 7d4adac255d8f414f8a12fe59f5ec48f, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d4adac255d8f414f8a12fe59f5ec48f, type: 3}
