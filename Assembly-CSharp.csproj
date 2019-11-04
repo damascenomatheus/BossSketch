@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Boss.cs" />
     <Compile Include="Assets\Scripts\FOV.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\Spear.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/matheusdamasceno/Documents/UnityProjects/BossCombat/BossSketch/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

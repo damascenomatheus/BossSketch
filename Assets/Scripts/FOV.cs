@@ -7,6 +7,8 @@ public class FOV : MonoBehaviour
 
     [SerializeField]
     private Animator _bossAnimator;
+    [SerializeField]
+    private GameObject _boss;
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -16,6 +18,12 @@ public class FOV : MonoBehaviour
             Player p = collision.GetComponent<Player>();
             if (p != null)
             {
+                if(p.transform.position.x > -0.3)
+                {
+                    _boss.transform.rotation = new Quaternion(0, 180, 0, 0); 
+                } else if(p.transform.position.x < -0.3) {
+                    _boss.transform.rotation = new Quaternion(0, 0, 0, 0);
+                }
                 _bossAnimator.SetBool("isClose", true);
             }
         }
@@ -28,6 +36,7 @@ public class FOV : MonoBehaviour
             Player p = collision.GetComponent<Player>();
             if (p != null)
             {
+                _boss.transform.rotation = new Quaternion(0, 0, 0, 0);
                 _bossAnimator.SetBool("isClose", false);
             }
         }

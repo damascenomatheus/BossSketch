@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{08AE71C0-3410-1F9E-A560-0E79FF7549D4}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Boss.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FOV.cs">
     <Files>
-      <File FileName="Assets/Scripts/Boss.cs" Line="21" Column="6" />
-      <File FileName="Assets/Scripts/Player.cs" Line="33" Column="6" />
+      <File FileName="Assets/Scripts/Boss.cs" Line="25" Column="39" />
+      <File FileName="Assets/Scripts/Player.cs" />
       <File FileName="Assets/Scripts/FOV.cs" Line="9" Column="36" />
     </Files>
     <Pads>
@@ -11,7 +11,7 @@
           <Node name="BossSketch" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Boss.cs" selected="True" />
+                <Node name="FOV.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -21,7 +21,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="557c1003-953d-4952-a5de-6c3baab0ca6e" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5a51e9ba-d6ad-4162-b138-22a857433704" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
