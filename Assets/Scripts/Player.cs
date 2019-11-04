@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
     }
 
+    
     private void FixedUpdate()
     {
         Movement();
@@ -30,10 +31,23 @@ public class Player : MonoBehaviour
 
     void Movement()
     {
+        if (movement.x < 0)
+        {
+            transform.rotation = new Quaternion(0, 180, 0, 0);
+
+        }
+        else if (movement.x > 0)
+        {
+            transform.rotation = new Quaternion(0, 0, 0, 0);
+
+        }
+
+
         _playerRigibody.MovePosition(_playerRigibody.position + movement * _speed * Time.fixedDeltaTime);
 
+
         _playerAnimator.SetFloat("Horizontal", movement.x);
-        _playerAnimator.SetFloat("Vertical", movement.y);
+        _playerAnimator.SetFloat("Vertical", movement.y); 
         _playerAnimator.SetFloat("Speed", movement.sqrMagnitude); 
     }
 
